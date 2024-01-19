@@ -1,4 +1,7 @@
-### 本项目用于保存本人ros功能包
+# 本项目用于保存本人ros工程文件
+### catkin_ws
+* ros工作空间
+* 功能包介绍如下：
 #### ins_eskf_kitt
 * 实现```uwb imu eskf```定位  
 * 目前正在开发基于单个```uwb```进行点对点定位  
@@ -16,3 +19,18 @@
 #### 后续计划
 * 后续将更新```px4 gazebo```环境下无人机模拟```uwb```信号  
 * 将```offboard_pkg```更加泛用化，用于多架无人机控制  
+***
+***
+### dataset
+* 存储数据  
+***
+***
+### shells
+* 存放bash脚本文件
+#### gazebo_simulation_offboard_
+* 用于gazebo仿真
+#### imu_uwb_pkg
+* imu uwb eskf项目所用  
+* ```imu_single _start.sh```启动imu uwb eskf程序  
+* ```bag_start.sh```启动imu uwb eskf程序并录制数据至```/dataset```文件夹  
+* ```clear_dataset.sh```清除```bag _start.sh```录制的数据
