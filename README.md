@@ -17,16 +17,17 @@
 * 存储数据  
 ***
 ### shells
-* 存放bash脚本文件
+* 存放```bash```脚本文件
 * 脚本介绍：
 #### gazebo_simulation_offboard_
-* 用于gazebo仿真
+* 用于```gazebo```仿真
 #### imu_uwb_pkg
-* imu uwb eskf项目所用  
+* ```imu uwb eskf```项目所用  
 * ```imu_single _start.sh```启动imu uwb eskf程序  
 * ```bag_start.sh```启动imu uwb eskf程序并录制数据至```/dataset```文件夹  
 * ```clear_dataset.sh```清除```bag _start.sh```录制的数据
 ***
 ### 后续计划
-* 后续将更新```px4 gazebo```环境下无人机模拟```uwb```信号  
-* 将```offboard_pkg```更加泛用化，用于多架无人机控制  
+* 后续将更新功能包```px4 gazebo```环境下无人机模拟```uwb```信号  
+* 将```offboard_pkg```更加泛用化，用于多架无人机控制
+* 将```imu uwb eskf```项目搭建于多无人机仿真环境中
