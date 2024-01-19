@@ -1,0 +1,20 @@
+<!--imu ros 驱动-->
+<launch>
+    <!-- imu型号，默认 a9 -->
+    <arg name="imu_type" default="a9" doc="imu_type [a9, b9, b6]"/>
+
+    <!-- imu 对应 python 文件 -->
+    <node pkg="handsfree_ros_imu" type="hfi_$(arg imu_type)_ros.py" name="imu" output="screen">
+        <param name="port"               type = "str"    value="/dev/ttyUSB0"/>
+        <!-- a9 重力加速度归一化处理，True 使用归一化处理， False 不适用归一化处理 -->
+        <param name="gra_normalization"  type = "bool"   value="True" if="$(eval imu_type == 'a9')"/>
+    </node>
+
+    <node pkg="imu_single_uwb" type="linktrack" name="linktrack0" output="screen">
+        <param name="port_name" value="/dev/ttyCH343USB0" />
+        <param name="baud_rate" value="921600" />
+    </node>
+    <node pkg = "imu_single_uwb" type = "imu2tf" name="imu2tf_node"/>
+    <node pkg = "rviz" type="rviz" name="rviz_node" args = "-d /home/robot/ros_ws/catkin_ws/src/imu_single_uwb/rviz/imu_normal_rviz.rviz"/>
+    <!--<node pkg = "rviz" type="rviz" name="rviz_node" args = "-d $(find ins_eskf)/rviz/ins_eskf.rviz"/>--> 
+</launch>

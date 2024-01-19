@@ -1,0 +1,10 @@
+Log file created at: 2023/12/22 21:00:45
+Running on machine: WP
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20231222 21:00:45.087930 52187 ins_eskf_node.cpp:22] INS ESKF STARTED.
+I20231222 21:00:45.088281 52187 ins_eskf_ROS_wrapper.cpp:15] imu topic : /handsfree/imu
+I20231222 21:00:45.088301 52187 ins_eskf_ROS_wrapper.cpp:17] uwb_topic : /uwb_msgs_filed
+I20231222 21:00:45.088315 52187 ins_eskf_ROS_wrapper.cpp:18] using dataset: kitti
+I20231222 21:00:45.088327 52187 ins_eskf_ROS_wrapper.cpp:21] Using imu and vel in kitti for initialization.
+I20231222 21:00:45.088518 52187 ins_eskf_ROS_wrapper.cpp:32] topic subscribe and advertise.

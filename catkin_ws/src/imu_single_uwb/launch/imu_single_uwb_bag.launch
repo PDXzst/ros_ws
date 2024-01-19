@@ -1,0 +1,11 @@
+<!--imu ros 驱动-->
+<launch>
+    <node pkg="rosbag" type="play" name="bag_play_node" args="/home/robot/ros_ws/dataset/imu_single_uwb.bag"/>
+    <!-- moving_filer 启动 -->
+    <node pkg = "moving_filer" type = "moving_filer" name = "filer_node"/>
+    <node pkg = "imu_single_uwb" type = "ins_eskf_start" name="ins_eskf_node"/>
+    
+    <node pkg = "state_path_rviz" type ="path_rviz" name = "path_node"/>
+
+    <node pkg = "rviz" type="rviz" name="rviz_node" args = "-d $(find ins_eskf)/rviz/ins_eskf.rviz"/> 
+</launch>

@@ -1,0 +1,11 @@
+<launch>
+  <include file="$(find pozyx_simulation)/launch/uwb_anchors_set.launch" />
+  
+  <node pkg="pozyx_simulation" name="pozyx_simulation"  type="uwb_simulation.py" output="screen">
+        <param name="modelstate_index_0" value="12" /><!--以他为母无人机-->
+        <param name="modelstate_index_1" value="13" />
+        <param name="modelstate_index_2" value="14" />
+        <param name="robot_number" value="3" />
+
+  </node>
+</launch>

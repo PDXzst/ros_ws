@@ -1,0 +1,11 @@
+# generated from genmsg/cmake/pkg-genmsg.context.in
+
+messages_str = "/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackAnchorframe0.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNode0.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNode1.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNode2.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNodeframe0.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNodeframe1.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNodeframe2.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNodeframe3.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackTag.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackTagframe0.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/TofsenseCascade.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/TofsenseFrame0.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackAoaNode0.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackAoaNodeframe0.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNode4Anchor.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNode4Tag.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNodeframe4.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNode5.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNodeframe5.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNode6.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/LinktrackNodeframe6.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/TofsenseMFrame0.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/TofsenseMFrame0Pixel.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/IotFrame0.msg;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg/IotFrame0Node.msg"
+services_str = ""
+pkg_name = "imu_single_uwb"
+dependencies_str = "std_msgs"
+langs = "gencpp;geneus;genlisp;gennodejs;genpy"
+dep_include_paths_str = "imu_single_uwb;/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/msg;std_msgs;/opt/ros/noetic/share/std_msgs/cmake/../msg"
+PYTHON_EXECUTABLE = "/usr/bin/python3"
+package_has_static_sources = '' == 'TRUE'
+genmsg_check_deps_script = "/opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

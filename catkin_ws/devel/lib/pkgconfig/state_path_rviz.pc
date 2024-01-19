@@ -1,0 +1,8 @@
+prefix=/home/robot/ros_ws/catkin_ws/devel
+
+Name: state_path_rviz
+Description: Description of state_path_rviz
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
