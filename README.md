@@ -50,8 +50,8 @@ roslaunch px4 mavros_posix_sitl_cp.launch
 rosrun offboard_pkg offboard_node
 ```
 * 在多无人机中启用该程序  
-更改`offboard_pkg/src/offboard_node.cpp`中的话题：  
-``` cpp
+更改`offboard_pkg/src/offboard_node.cpp`中的话题(增加前缀`uav0/`等)：  
+```c
 ros::Subscriber state_sub = nh.subscribe<mavros_msgs::State>("mavros/state", 10, state_cb);
 ros::Publisher local_pos_pub = nh.advertise<geometry_msgs::PoseStamped>("mavros/setpoint_position/local", 10);
 ros::ServiceClient arming_client = nh.serviceClient<mavros_msgs::CommandBool>("mavros/cmd/arming");
@@ -61,7 +61,6 @@ ros::ServiceClient set_mode_client = nh.serviceClient<mavros_msgs::SetMode>("mav
 ```
 roslaunch px4 multi_uav_mavros_sitl_cp.launch  
 rosrun offboard_pkg offboard_node  
-
 ```
 #### 6.state_path_rviz
 > 实现将`nav_ msgs::Odometry`话题转化为`nav_ msgs::Path`话题，用于`rviz`中显示  
