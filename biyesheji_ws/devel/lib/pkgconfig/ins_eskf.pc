@@ -1,0 +1,8 @@
+prefix=/home/robot/ros_ws/biyesheji_ws/devel
+
+Name: ins_eskf
+Description: Description of ins_eskf
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,2 +1,2 @@
-handsfree_ros_imu:imu_single_uwb:ins_eskf_kitti:moving_filer:offboard_pkg:pozyx_simulation:state_path_rviz
+Px4_keyboard_control:handsfree_ros_imu:imu_single_uwb:ins_eskf_kitti:keyboard:moving_filer:offboard_pkg:pozyx_simulation:state_path_rviz
 -DCATKIN_DEVEL_PREFIX=/home/robot/ros_ws/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/robot/ros_ws/catkin_ws/install -G Unix Makefiles

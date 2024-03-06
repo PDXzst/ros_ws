@@ -1,0 +1,8 @@
+prefix=/home/robot/ros_ws/biyesheji_ws/devel
+
+Name: imu_uwb_eskf
+Description: Description of imu_uwb_eskf
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy sensor_msgs std_msgs message_runtime

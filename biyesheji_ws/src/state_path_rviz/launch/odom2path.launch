@@ -1,0 +1,27 @@
+<launch>
+    <!-- Set ROS parameters -->
+    <arg name="imu_odo_topic"  default="/imu_odometry"/>
+    <arg name="imu_path_topic"  default="/imu_path"/>
+
+    <arg name="uwb_odo_topic"  default="/uwb_odometry"/>
+    <arg name="uwb_path_topic"  default="/uwb_path"/>
+
+    <arg name="true_odo_topic"  default="/ground_state"/>
+    <arg name="true_path_topic"  default="/ground_path"/>
+    
+    <!-- Launch your node with the specified parameters and namespace -->
+    <node pkg="state_path_rviz" type="odom2path" name="imu_odom_to_path" output="screen">
+        <param name="odom_topic" type="string" value="$(arg imu_odo_topic)"/>
+        <param name="path_topic" type="string" value="$(arg imu_path_topic)"/>
+    </node>
+
+    <node pkg="state_path_rviz" type="odom2path" name="uwb_odom_to_path" output="screen">
+        <param name="odom_topic" type="string" value="$(arg uwb_odo_topic)"/>
+        <param name="path_topic" type="string" value="$(arg uwb_path_topic)"/>
+    </node>
+
+    <node pkg="state_path_rviz" type="odom2path" name="groundture_odom_to_path" output="screen">
+        <param name="odom_topic" type="string" value="$(arg true_odo_topic)"/>
+        <param name="path_topic" type="string" value="$(arg true_path_topic)"/>
+    </node>
+</launch>

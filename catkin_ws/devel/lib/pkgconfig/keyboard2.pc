@@ -1,0 +1,8 @@
+prefix=/home/robot/ros_ws/catkin_ws/devel
+
+Name: keyboard2
+Description: Description of keyboard2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

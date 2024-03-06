@@ -8,4 +8,4 @@
 
 # modified environment variables
 export PWD='/home/robot/ros_ws/catkin_ws/build'
-export ROS_PACKAGE_PATH='/home/robot/ros_ws/catkin_ws/src:/opt/ros/noetic/share'
+export ROS_PACKAGE_PATH='/home/robot/scout_ws/src/velodyne_simulator/velodyne_simulator:/home/robot/scout_ws/src/velodyne_simulator/velodyne_gazebo_plugins:/home/robot/scout_ws/src/velodyne_simulator/velodyne_description:/home/robot/scout_ws/src/scout_gazebo_sim:/home/robot/scout_ws/src/scout_description:/home/robot/scout_ws/src/scout_control:/home/robot/scout_ws/src/offboard_pkg:/home/robot/scout_ws/src:/home/robot/ros_ws/catkin_ws/src:/opt/ros/noetic/share'

@@ -1,0 +1,11 @@
+Log file created at: 2024/03/05 13:02:32
+Running on machine: WP
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20240305 13:02:32.554649 33667 ins_eskf_node.cpp:22] INS ESKF STARTED.
+I20240305 13:02:32.555058 33667 ins_eskf_ROS_wrapper.cpp:15] imu topic : /imu
+I20240305 13:02:32.555070 33667 ins_eskf_ROS_wrapper.cpp:17] uwb_topic : /uav_position
+I20240305 13:02:32.555078 33667 ins_eskf_ROS_wrapper.cpp:18] using dataset: kitti
+I20240305 13:02:32.555086 33667 ins_eskf_ROS_wrapper.cpp:21] Using imu and vel in kitti for initialization.
+I20240305 13:02:32.555142 33667 ins_eskf_ROS_wrapper.cpp:32] topic subscribe and advertise.
+I20240305 13:02:33.017279 33667 ins_eskf_ROS_wrapper.cpp:103] 初始化完成

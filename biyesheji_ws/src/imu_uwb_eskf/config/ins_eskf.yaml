@@ -1,0 +1,37 @@
+
+#using dataset name,heres the only alternative: kitti 
+dataset: kitti
+
+imu_topic: /imu
+gps_topic: /kitti/oxts/gps/fix
+uwb_topic: /uav_position
+
+#only works when using kitti dataset 
+kitti/vel_topic: /kitti/oxts/gps/vel
+
+#In p v q bg ba g order 
+init_state_std: [
+ 0.001,0.001,0.001,
+ 0.001,0.001,0.001,
+ 0.00005,0.00005,0.00005,
+ 0.001,0.001,0.001,
+ 0.001,0.001,0.001,
+ 0.001,0.001,0.001
+]
+
+Q_gao_xiang/noise_a: 0.00   
+Q_gao_xiang/noise_g: 0.0000
+Q_gao_xiang/noise_ba: 0.00
+Q_gao_xiang/noise_bg: 0.0000
+
+
+
+#GPS observation noise 
+v_x: 0.0001
+v_y: 0.0001
+v_z: 0.001
+
+#uwb distance noise
+
+noise_uwb: 0.00001
+

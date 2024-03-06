@@ -138,11 +138,13 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/robot/ros_ws/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/robot/ros_ws/catkin_ws/build/handsfree_ros_imu/cmake_install.cmake")
   include("/home/robot/ros_ws/catkin_ws/build/pozyx_simulation/cmake_install.cmake")
+  include("/home/robot/ros_ws/catkin_ws/build/Px4_keyboard_control/cmake_install.cmake")
   include("/home/robot/ros_ws/catkin_ws/build/ins_eskf_kitti/cmake_install.cmake")
   include("/home/robot/ros_ws/catkin_ws/build/offboard_pkg/cmake_install.cmake")
   include("/home/robot/ros_ws/catkin_ws/build/imu_single_uwb/cmake_install.cmake")
   include("/home/robot/ros_ws/catkin_ws/build/moving_filer/cmake_install.cmake")
   include("/home/robot/ros_ws/catkin_ws/build/state_path_rviz/cmake_install.cmake")
+  include("/home/robot/ros_ws/catkin_ws/build/keyboard/cmake_install.cmake")
 
 endif()
 

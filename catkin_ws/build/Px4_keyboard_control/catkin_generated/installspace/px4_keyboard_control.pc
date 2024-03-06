@@ -1,0 +1,8 @@
+prefix=/home/robot/ros_ws/catkin_ws/install
+
+Name: px4_keyboard_control
+Description: Description of px4_keyboard_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

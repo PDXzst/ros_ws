@@ -1,0 +1,2 @@
+eskf:imu_uwb_eskf:pozyx_simulation:state_path_rviz
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/robot/ros_ws/biyesheji_ws/devel -DCMAKE_INSTALL_PREFIX=/home/robot/ros_ws/biyesheji_ws/install -G Unix Makefiles

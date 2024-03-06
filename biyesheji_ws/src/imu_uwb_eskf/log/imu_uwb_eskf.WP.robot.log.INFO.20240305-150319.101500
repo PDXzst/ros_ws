@@ -1,0 +1,12 @@
+Log file created at: 2024/03/05 15:03:19
+Running on machine: WP
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I20240305 15:03:19.236498 101500 ins_eskf_node.cpp:22] INS ESKF STARTED.
+I20240305 15:03:19.237200 101500 ins_eskf_ROS_wrapper.cpp:15] imu topic : /imu
+I20240305 15:03:19.237228 101500 ins_eskf_ROS_wrapper.cpp:17] uwb_topic : /uav_position
+I20240305 15:03:19.237243 101500 ins_eskf_ROS_wrapper.cpp:18] using dataset: kitti
+I20240305 15:03:19.237262 101500 ins_eskf_ROS_wrapper.cpp:21] Using imu and vel in kitti for initialization.
+I20240305 15:03:19.237370 101500 ins_eskf_ROS_wrapper.cpp:32] topic subscribe and advertise.
+I20240305 15:03:19.774735 101500 ins_eskf_ROS_wrapper.cpp:103] 初始化完成
+F20240305 15:03:30.704182 101500 ins_eskf.cpp:75] Check failed: _measure.uwb_data.stamp - state_stamp > 0 Coming gps data stamp earlier than current state.Time Seq Error.

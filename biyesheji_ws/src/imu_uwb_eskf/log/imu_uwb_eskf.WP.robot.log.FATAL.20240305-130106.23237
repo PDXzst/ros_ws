@@ -1,0 +1,5 @@
+Log file created at: 2024/03/05 13:01:06
+Running on machine: WP
+Running duration (h:mm:ss): 0:00:00
+Log line format: [IWEF]yyyymmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F20240305 13:01:06.159977 23237 ins_eskf.cpp:75] Check failed: _measure.uwb_data.stamp - state_stamp > 0 Coming gps data stamp earlier than current state.Time Seq Error.

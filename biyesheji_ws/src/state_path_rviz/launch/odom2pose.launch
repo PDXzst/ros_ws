@@ -1,0 +1,34 @@
+<launch>
+    <!-- Set ROS parameters -->
+    <arg name="imu_odom_topic" default="imu_odometry"/>
+    <arg name="imu_pose_topic" default="imu_pose"/>
+
+    <arg name="uwb_odom_topic" default="uwb_odometry"/>
+    <arg name="uwb_pose_topic" default="uwb_pose"/>
+
+    <arg name="groundture_odom_topic" default="ground_state"/>
+    <arg name="groundture_pose_topic" default="ground_pose"/>
+    
+    <!-- Launch your node with the specified parameters -->
+    <node pkg="state_path_rviz" type="odom2pose.py" name="imu_odom_to_pose" output="screen">
+        <param name="odom_topic" value="$(arg imu_odom_topic)"/>
+        <param name="pose_topic" value="$(arg imu_pose_topic)"/>
+        <param name="red" type="int" value="0"/>
+        <param name="green" type="int" value="1"/>
+        <param name="blue" type="int" value="0"/>
+    </node>
+    <node pkg="state_path_rviz" type="odom2pose.py" name="uwb_odom_to_pose" output="screen">
+        <param name="odom_topic" value="$(arg uwb_odom_topic)"/>
+        <param name="pose_topic" value="$(arg uwb_pose_topic)"/>
+        <param name="red" type="int" value="1"/>
+        <param name="green" type="int" value="0"/>
+        <param name="blue" type="int" value="0"/>
+    </node>
+    <node pkg="state_path_rviz" type="odom2pose.py" name="groundture_odom_to_pose" output="screen">
+        <param name="odom_topic" value="$(arg groundture_odom_topic)"/>
+        <param name="pose_topic" value="$(arg groundture_pose_topic)"/>
+        <param name="red" type="int" value="1"/>
+        <param name="green" type="int" value="1"/>
+        <param name="blue" type="int" value="0"/>
+    </node>
+</launch>
