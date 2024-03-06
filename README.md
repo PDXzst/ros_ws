@@ -93,9 +93,27 @@ roslaunch pozyx_simulation uwb_manually_initializing.launch
 * `clear_dataset.sh`清除`bag_start.sh`录制的数据
 ***
 ***
+### biyesheji_ws
+该ros_workspace用于本人毕业设计  
+#### eskf
+该功能包实现：基于误差状态卡尔曼滤波器eskf对uwb定位信号和imu信号进行融合，以提高定位精度  
+话题修改：`config/ins_eskf.yaml`  
+配置文件修改:`global_definition`  
+rviz文件：`rviz/imu_uwb_eskf_ALLstart.rviz`  
+launch文件：`eskf.launch`用于启动eskf `imu_uwb_eskf_ALLstart.launch`用于启动毕业设计的全部工程  
+#### imu_uwb_eskf
+本来想用来实现`eskf`现已废弃  
+#### pozyx_simulation
+用于模拟uwb信号并实现定位算法  
+`uwb_simulation.py`模拟uwb信号，改变`uwb anchor`需修改`uwb_anchors_set.launch`  
+`LM_uwb_cal.launch`用于实现基于`LM`的uwb三角定位算法  
+`uwb_cal.launch`用于实现基于`线性最小二乘`的uwb三角定位算法  
+#### state_path_rviz
+`odom2path`将`uwb定位位置``eskf定位位置``无人机真实位置`的`/odometry`话题转化为`/Path`话题  
+`odom2pose`将`uwb定位位置``eskf定位位置``无人机真实位置`的`/odometry`话题转化为`/Pose`话题  
 ### 后续计划
-- [ ] 后续将更新功能包`px4 gazebo`环境下无人机模拟`uwb`信号  
+- [x] 后续将更新功能包`px4 gazebo`环境下无人机模拟`uwb`信号  
 - [ ] 将`offboard_pkg`更加泛用化，用于多架无人机控制  
-- [ ] 将`imu uwb eskf`项目搭建于多无人机仿真环境中  
+- [x] 将`imu uwb eskf`项目搭建于多无人机仿真环境中  
 ***
 ***
