@@ -647,6 +647,20 @@ LM_uwb_calculate/fast:
 	cd /home/robot/ros_ws/biyesheji_ws/build && $(MAKE) $(MAKESILENT) -f pozyx_simulation/CMakeFiles/LM_uwb_calculate.dir/build.make pozyx_simulation/CMakeFiles/LM_uwb_calculate.dir/build
 .PHONY : LM_uwb_calculate/fast
 
+# Convenience name for target.
+pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/rule:
+	cd /home/robot/ros_ws/biyesheji_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/rule
+.PHONY : pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/rule
+
+# Convenience name for target.
+LMplus_uwb_calculate: pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/rule
+.PHONY : LMplus_uwb_calculate
+
+# fast build rule for target.
+LMplus_uwb_calculate/fast:
+	cd /home/robot/ros_ws/biyesheji_ws/build && $(MAKE) $(MAKESILENT) -f pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/build.make pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/build
+.PHONY : LMplus_uwb_calculate/fast
+
 src/LM_node.o: src/LM_node.cpp.o
 .PHONY : src/LM_node.o
 
@@ -694,6 +708,54 @@ src/LM_uwb_calculate.s: src/LM_uwb_calculate.cpp.s
 src/LM_uwb_calculate.cpp.s:
 	cd /home/robot/ros_ws/biyesheji_ws/build && $(MAKE) $(MAKESILENT) -f pozyx_simulation/CMakeFiles/LM_uwb_calculate.dir/build.make pozyx_simulation/CMakeFiles/LM_uwb_calculate.dir/src/LM_uwb_calculate.cpp.s
 .PHONY : src/LM_uwb_calculate.cpp.s
+
+src/LMplus_node.o: src/LMplus_node.cpp.o
+.PHONY : src/LMplus_node.o
+
+# target to build an object file
+src/LMplus_node.cpp.o:
+	cd /home/robot/ros_ws/biyesheji_ws/build && $(MAKE) $(MAKESILENT) -f pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/build.make pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/src/LMplus_node.cpp.o
+.PHONY : src/LMplus_node.cpp.o
+
+src/LMplus_node.i: src/LMplus_node.cpp.i
+.PHONY : src/LMplus_node.i
+
+# target to preprocess a source file
+src/LMplus_node.cpp.i:
+	cd /home/robot/ros_ws/biyesheji_ws/build && $(MAKE) $(MAKESILENT) -f pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/build.make pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/src/LMplus_node.cpp.i
+.PHONY : src/LMplus_node.cpp.i
+
+src/LMplus_node.s: src/LMplus_node.cpp.s
+.PHONY : src/LMplus_node.s
+
+# target to generate assembly for a file
+src/LMplus_node.cpp.s:
+	cd /home/robot/ros_ws/biyesheji_ws/build && $(MAKE) $(MAKESILENT) -f pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/build.make pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/src/LMplus_node.cpp.s
+.PHONY : src/LMplus_node.cpp.s
+
+src/LMplus_uwb_calculate.o: src/LMplus_uwb_calculate.cpp.o
+.PHONY : src/LMplus_uwb_calculate.o
+
+# target to build an object file
+src/LMplus_uwb_calculate.cpp.o:
+	cd /home/robot/ros_ws/biyesheji_ws/build && $(MAKE) $(MAKESILENT) -f pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/build.make pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/src/LMplus_uwb_calculate.cpp.o
+.PHONY : src/LMplus_uwb_calculate.cpp.o
+
+src/LMplus_uwb_calculate.i: src/LMplus_uwb_calculate.cpp.i
+.PHONY : src/LMplus_uwb_calculate.i
+
+# target to preprocess a source file
+src/LMplus_uwb_calculate.cpp.i:
+	cd /home/robot/ros_ws/biyesheji_ws/build && $(MAKE) $(MAKESILENT) -f pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/build.make pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/src/LMplus_uwb_calculate.cpp.i
+.PHONY : src/LMplus_uwb_calculate.cpp.i
+
+src/LMplus_uwb_calculate.s: src/LMplus_uwb_calculate.cpp.s
+.PHONY : src/LMplus_uwb_calculate.s
+
+# target to generate assembly for a file
+src/LMplus_uwb_calculate.cpp.s:
+	cd /home/robot/ros_ws/biyesheji_ws/build && $(MAKE) $(MAKESILENT) -f pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/build.make pozyx_simulation/CMakeFiles/LMplus_uwb_calculate.dir/src/LMplus_uwb_calculate.cpp.s
+.PHONY : src/LMplus_uwb_calculate.cpp.s
 
 src/node.o: src/node.cpp.o
 .PHONY : src/node.o
@@ -789,6 +851,7 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... LM_uwb_calculate"
+	@echo "... LMplus_uwb_calculate"
 	@echo "... uwb_calculate"
 	@echo "... src/LM_node.o"
 	@echo "... src/LM_node.i"
@@ -796,6 +859,12 @@ help:
 	@echo "... src/LM_uwb_calculate.o"
 	@echo "... src/LM_uwb_calculate.i"
 	@echo "... src/LM_uwb_calculate.s"
+	@echo "... src/LMplus_node.o"
+	@echo "... src/LMplus_node.i"
+	@echo "... src/LMplus_node.s"
+	@echo "... src/LMplus_uwb_calculate.o"
+	@echo "... src/LMplus_uwb_calculate.i"
+	@echo "... src/LMplus_uwb_calculate.s"
 	@echo "... src/node.o"
 	@echo "... src/node.i"
 	@echo "... src/node.s"

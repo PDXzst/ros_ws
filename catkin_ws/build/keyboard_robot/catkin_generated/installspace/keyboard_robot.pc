@@ -1,0 +1,8 @@
+prefix=/home/robot/ros_ws/catkin_ws/install
+
+Name: keyboard_robot
+Description: Description of keyboard_robot
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lkeyboard
+Requires: laser_geometry mavros_msgs pcl_conversions pcl_ros roscpp sensor_msgs tf

@@ -1,18 +1,25 @@
 <launch>
+    <!-- 输出曲线为Marks类型 -->
     <!-- Set ROS parameters -->
     <arg name="imu_odom_topic" default="imu_odometry"/>
     <arg name="imu_pose_topic" default="imu_pose"/>
+    <arg name="imu_line_topic" default="imu_line"/>
 
     <arg name="uwb_odom_topic" default="uwb_odometry"/>
     <arg name="uwb_pose_topic" default="uwb_pose"/>
-
+    <arg name="uwb_line_topic" default="uwb_line"/>
+    <!--groundture话题：-->
     <arg name="groundture_odom_topic" default="ground_state"/>
+    <!--groundture输出pose话题：-->
     <arg name="groundture_pose_topic" default="ground_pose"/>
-    
+    <!--groundture输出line话题：-->
+    <arg name="groundture_line_topic" default="ground_line"/>
+    <!--在rviz中同时显示上述两个话题可绘制串珠型图像-->
     <!-- Launch your node with the specified parameters -->
     <node pkg="state_path_rviz" type="odom2pose.py" name="imu_odom_to_pose" output="screen">
         <param name="odom_topic" value="$(arg imu_odom_topic)"/>
         <param name="pose_topic" value="$(arg imu_pose_topic)"/>
+        <param name="line_topic" value="$(arg imu_line_topic)"/>
         <param name="red" type="int" value="0"/>
         <param name="green" type="int" value="1"/>
         <param name="blue" type="int" value="0"/>
@@ -20,6 +27,7 @@
     <node pkg="state_path_rviz" type="odom2pose.py" name="uwb_odom_to_pose" output="screen">
         <param name="odom_topic" value="$(arg uwb_odom_topic)"/>
         <param name="pose_topic" value="$(arg uwb_pose_topic)"/>
+        <param name="line_topic" value="$(arg uwb_line_topic)"/>
         <param name="red" type="int" value="1"/>
         <param name="green" type="int" value="0"/>
         <param name="blue" type="int" value="0"/>
@@ -27,6 +35,8 @@
     <node pkg="state_path_rviz" type="odom2pose.py" name="groundture_odom_to_pose" output="screen">
         <param name="odom_topic" value="$(arg groundture_odom_topic)"/>
         <param name="pose_topic" value="$(arg groundture_pose_topic)"/>
+        <param name="line_topic" value="$(arg groundture_line_topic)"/>
+        <!--颜色设置-->
         <param name="red" type="int" value="1"/>
         <param name="green" type="int" value="1"/>
         <param name="blue" type="int" value="0"/>

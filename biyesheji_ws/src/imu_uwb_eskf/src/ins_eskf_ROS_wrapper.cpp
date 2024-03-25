@@ -34,7 +34,7 @@ void Ins_eskf_ROS_Wrapper::register_sub_pub(){
     //sub_gps = nh.subscribe<sensor_msgs::NavSatFix>(gps_topic,100,&Ins_eskf_ROS_Wrapper::gps_cb,this);
     sub_uwb = nh.subscribe<nav_msgs::Odometry>(uwb_topic,100,&Ins_eskf_ROS_Wrapper::uwb_cb,this);
     pub_uwb_odometry = nh.advertise<nav_msgs::Odometry>("uwb_odometry",50);
-    pub_imu_odometrty_ = nh.advertise<nav_msgs::Odometry>("imu_odometry",10);
+    pub_imu_odometrty_ = nh.advertise<nav_msgs::Odometry>("imu_odometry",50);
     //pub_kitti_gps_odometrty_ = nh.advertise<nav_msgs::Odometry>("kitti_gps_odometry",10);
     pub_imu_normal_odometrty = nh.advertise<nav_msgs::Odometry>("imu_normal_odometry",10);
     /*

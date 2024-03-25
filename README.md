@@ -95,6 +95,8 @@ roslaunch pozyx_simulation uwb_manually_initializing.launch
 ***
 ### biyesheji_ws
 该ros_workspace用于本人毕业设计  
+功能包`state_path_rviz`：  
+`odom2path.cpp` `odom2pose.py`对应两种`rviz`图像,修改`launch/odom2****.launch`更改`topic`  
 #### eskf
 该功能包实现：基于误差状态卡尔曼滤波器eskf对uwb定位信号和imu信号进行融合，以提高定位精度  
 话题修改：`config/ins_eskf.yaml`  

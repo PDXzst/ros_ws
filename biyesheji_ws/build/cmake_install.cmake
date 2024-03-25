@@ -140,6 +140,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/robot/ros_ws/biyesheji_ws/build/eskf/cmake_install.cmake")
   include("/home/robot/ros_ws/biyesheji_ws/build/imu_uwb_eskf/cmake_install.cmake")
   include("/home/robot/ros_ws/biyesheji_ws/build/state_path_rviz/cmake_install.cmake")
+  include("/home/robot/ros_ws/biyesheji_ws/build/keyboard/cmake_install.cmake")
 
 endif()
 

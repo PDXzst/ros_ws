@@ -3,6 +3,6 @@ prefix=/home/robot/ros_ws/catkin_ws/devel
 Name: serial
 Description: Description of serial
 Version: 1.2.1
-Cflags: -I/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/extern/serial/include
+Cflags: -I/home/robot/ros_ws/catkin_ws/src/imu_uwb_eskf/extern/serial/include
 Libs: -L${prefix}/lib -lserial -lrt -lpthread
 Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/robot/ros_ws/biyesheji_ws/install
+
+Name: keyboard
+Description: Description of keyboard
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lkeyboard
+Requires: laser_geometry mavros_msgs pcl_conversions pcl_ros roscpp sensor_msgs tf

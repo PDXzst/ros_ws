@@ -67,7 +67,7 @@ set(serial_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(serial_SOURCE_PREFIX /home/robot/ros_ws/catkin_ws/src/imu_single_uwb/extern/serial)
+  set(serial_SOURCE_PREFIX /home/robot/ros_ws/catkin_ws/src/imu_uwb_eskf/extern/serial)
   set(serial_DEVEL_PREFIX /home/robot/ros_ws/catkin_ws/devel)
   set(serial_INSTALL_PREFIX "")
   set(serial_PREFIX ${serial_DEVEL_PREFIX})
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(serial_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/extern/serial/include " STREQUAL " ")
+if(NOT "/home/robot/ros_ws/catkin_ws/src/imu_uwb_eskf/extern/serial/include " STREQUAL " ")
   set(serial_INCLUDE_DIRS "")
-  set(_include_dirs "/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/extern/serial/include")
+  set(_include_dirs "/home/robot/ros_ws/catkin_ws/src/imu_uwb_eskf/extern/serial/include")
   if(NOT "https://github.com/wjwwood/serial/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/wjwwood/serial/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wjwwood.github.com/serial/ " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/extern/serial/include " 
         message(FATAL_ERROR "Project 'serial' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'serial' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/robot/ros_ws/catkin_ws/src/imu_single_uwb/extern/serial/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'serial' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/robot/ros_ws/catkin_ws/src/imu_uwb_eskf/extern/serial/${idir}'.  ${_report}")
     endif()
     _list_append_unique(serial_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/robot/ros_ws/catkin_ws/devel/lib;/home/robot/scout_ws/devel_isolated/velodyne_simulator/lib;/home/robot/scout_ws/devel_isolated/velodyne_gazebo_plugins/lib;/home/robot/scout_ws/devel_isolated/velodyne_description/lib;/home/robot/scout_ws/devel_isolated/scout_gazebo_sim/lib;/home/robot/scout_ws/devel_isolated/scout_description/lib;/home/robot/scout_ws/devel_isolated/scout_control/lib;/home/robot/scout_ws/devel_isolated/offboard_pkg/lib;/home/robot/scout_ws/devel/lib;/home/robot/ros_ws/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/robot/ros_ws/catkin_ws/devel/lib;/home/robot/ros_ws/biyesheji_ws/devel/lib;/home/robot/scout_ws/devel_isolated/velodyne_simulator/lib;/home/robot/scout_ws/devel_isolated/velodyne_gazebo_plugins/lib;/home/robot/scout_ws/devel_isolated/velodyne_description/lib;/home/robot/scout_ws/devel_isolated/scout_gazebo_sim/lib;/home/robot/scout_ws/devel_isolated/scout_description/lib;/home/robot/scout_ws/devel_isolated/scout_control/lib;/home/robot/scout_ws/devel_isolated/offboard_pkg/lib;/home/robot/scout_ws/devel/lib;/home/robot/ros_ws/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
